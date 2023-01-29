@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+     <script>
+                       function validation()
+                       {
+                                let name1=document.f1.name.value;
+                                let fname1=document.f1.fname.value;
+                                let email1=document.f1.email.value;
+                                let pass1=document.f1.pass.value;
+                                let cpass1=document.f1.cpass.value;
+                                let gender1=document.f1.gender.value;
+                                let mob1=document.f1.mob.value;
+                                let dob1=document.f1.dob.value;
+
+                         if(name1=="")
+                         {
+                                    alert("Please Enter Name: ");
+                                    document.f1.name.focus();
+                                    return false;
+                                    }
+                                    if(fname1==""){
+                                    alert("Please Enter Your Father Name: ");
+                                    document.f1.fname.focus();
+                                    return false;
+                                }
+                                if(email1==""){
+                                    alert("Please Enter Email: ");
+                                    document.f1.email.focus();
+                                    return false;
+                                if(email1.indexOf('@')<=0){
+                                    alert("Please Provided a vaild @ position")
+                                    document.f1.email.focus();
+                                    return false;
+                                }
+                                if(pass1==""){
+                                    alert("Please Enter Password: ");
+                                    document.f1.pass.focus();
+                                    return false;
+                                }
+                                if(pass1.length<8)
+                                {
+                                    alert("Password Enter atleast 8 characters")
+                                    document.f1.pass1.focus();
+                                    return false;
+                                }
+                                if(pass1.length>15)
+                                {
+                                    alert("Password length must not exceed 15 characters")
+                                    document.f1.pass1.focus();
+                                    return false;
+                                }
+                                if(cpass1==""){
+                                    alert("Please Re-Enter Password: ");
+                                    document.f1.cpass.focus();
+                                    return false;
+                                }
+                                if(pass1!=cpass1){
+                                    alert("Your Password doesn't match Again Enter password :");
+                                    document.f1.pass.value="";
+                                    document.f1.cpass.value="";
+                                    document.f1.pass.focus();
+                                    return false;
+                                }
+                                if(gender1==""){
+                                    alert("Plaese Select Your Gender:  ");
+                                    document.f1.gender.focus();
+                                    return false;
+                                }
+                                if(mob1==""){
+                                    alert("Please Enter Your Mobile: ");
+                                    document.f1.mob.focus();
+                                    return false;
+                                }
+                                if(dob1==""){
+                                    alert("Plaese Enter Your Date of Birth: ");
+                                    document.f1.dob.focus();
+                                    return false;
+                                }
+                       }
+                       </script>
+
+</head>
+
+<body bgcolor="#d4d6fc">
+
+
+           <a href='home'>Back To Home</a>
+       <form action="ragisttask" name="f1">
+        <table align="center" border="2" bgcolor="#40aaf2" height="300px" width="500px">
+                 <tr>
+                 <th>Name : </th>
+                 <th><input type="text" name="name"></th>
+                 </tr>
+                 <tr>
+                 <th>Father Name : </th>
+                 <th><input type="text" name="fname"></th>
+                 </tr>
+                 <tr>
+                 <th>Email Id : </th>
+                 <th><input type="text" name="email"></th>
+                 </tr>
+                 <tr>
+                 <th>Password : </th>
+                 <th><input type="password" name="password"></th>
+                 </tr>
+                 <tr>
+                 <th>Confirm Password : </th>
+                 <th><input type="password" name="cpassword"></th>
+                 </tr>
+                 <tr>
+                 <th>Gender : </th>
+                 <th><input type="radio" name="gender" value="Male">Male
+                 <input type="radio" name="gender" value="Female">Female</th>
+                 </tr>
+                  <tr>
+                 <th>Mobile Number : </th>
+                 <th><input type="tel" name="mob"></th>
+                 </tr>
+                  <tr>
+                 <th>Date Of Birth : </th>
+                 <th><input type="date" name="dob"></th>
+                 </tr>
+                 <tr>
+                 <td colspan="2" align="center"><a href='login' ><input type="submit" value="Ragistration" name="" onclick=" return validation();"></a>
+                   <select name="role">
+                    <option><a href="Student">Student</a></option>
+                    <option><a href="Faculty">Faculty</a></option>
+                    <option><a href="Admin">Admin</a></option>
+                       
+                   </select>
+                   <br>
+                   <br>
+                   Already have a account? <a href="login" style="  color:blue; ">Login</a>
+                 </td>
+                 </tr>
+                 </table>
+                 </form>
+                 </body>
+                 </html>
+            
+                       
+                      
+                   

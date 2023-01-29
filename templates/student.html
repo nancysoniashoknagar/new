@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+
+	<body bgcolor="lightblue">
+		<a href='home'></a>
+
+		<form action='home'>
+			{% for x in rec %}
+			<h1>ID: <input type="text" name="id" value={{x.id}}></h1>
+			<h1>Name: <input type="text" name="name" value={{x.name}}></h1><br>
+			<h1>F_Name: <input type="text" name="fname" value={{x.fname}}></h1><br>
+			<h1>Email: <input type="text" name="email" value={{x.email}}>
+			</h1><br>
+			<h1>Password:<input type="text" name="Password" value={{x.passward}}>
+			</h1><br>
+			<h1>Gender: <input type="text" name="gender" value={{x.gender}}></h1><br>
+			<h1>Mobile: <input type="text" name="mob" value={{x.mob}}></h1><br>
+			<h1>DOB: <input type="text" name="dob" value={{x.dob}}>
+			</h1><br>
+			<button type="submit">Submit Details</button>
+
+			{% endfor %}
+		</form>
+
+
+
+	</body>
+
+</html>

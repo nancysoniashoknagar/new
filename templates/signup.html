@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>SIGN UP PAGE</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+html,
+body,
+.intro {
+  height: 100%;
+}
+
+@media (min-width: 560px) and (max-width: 750px) {
+  html,
+  body,
+  .intro {
+    height: 830px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  .intro {
+    height: 100%;
+  }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #667eea;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1))
+}
+</style>
+        
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NANCY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul> 
+           <form class="d-flex" role="search"> 
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- End Example Code -->
+            <center>
+              
+            
+                <section class="intro">
+                    <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/search-box/img4.jpg');">
+                      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(255,255,255,.6);">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                              <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                              <div class="card gradient-custom" style="border-radius: 1rem;">
+                                <div class="card-body p-5 text-white">
+                                  <div class="my-md-5">
+                  
+                                    <form action"" method="post" >
+                                      {% csrf_token %}
+                                      <div class="text-center pt-1">
+                                      <h1>SIGN UP</h1> <i class="fas fa-user-astronaut fa-3x"></i>
+                                        <class="fw-bold my-5 text-uppercase">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="form-outline form-white mb-4">
+                                      <label for="username"><h3>Username</h3></label>
+                                      <input type="text" placeholder="Username" name="username" id="username" class="form-control form-control-lg">
+                                    </div>
+                                      <div class="form-outline form-white mb-4">
+                                      <label for="email"><h3>Email</h3></label>
+                                      <input type="email" placeholder="Email or Phone" name="email" id="email" class="form-control form-control-lg">
+                                    </div>
+                                      <div class="form-outline form-white mb-4">
+                                      <label for="password1"><h3>Password</h3></label>
+                                      <input type="password" placeholder="Password" id="password1" name="password1" class="form-control form-control-lg">
+                                    </div>
+
+                                      <div class="form-outline form-white mb-4">
+                                      <label for="password2"><h3>Confirm Password</h3></label>
+                                      <input type="password" placeholder="Confirm Password" id="password2" name="password2" class="form-control form-control-lg">
+                                    </div>
+                                    <div class="text-center py-5">
+                                      <button class="btn btn-light btn-lg btn-rounded px-5" type="submit"><a href='login'> Signup</a></button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </form>
+                <footer>
+                  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2021:
+                    <a class="text-white" href="https://mywebsite.com/">Mywebsite.com</a>
+                  </div>
+                </footer>
+</center>
+</body>
+</html>
+
+{% comment %} <div class="form-outline form-white mb-4">
+                                      <div class="form-outline form-white mb-4">
+                                        <h4>Username</h4> <input type="username" id="typename" class="form-control form-control-lg" />
+                                      <label class="form-label" for="typePassword"></label>
+                                    </div>
+
+                                        <h4>Email</h4> <input type="email" id="typeEmail" class="form-control form-control-lg" />
+                                      <label class="form-label" for="typeEmail"></label>
+                                    </div>
+                  
+                                    <div class="form-outline form-white mb-4">
+                                        <h4>Password</h4> <input type="password1" id="typePassword1" class="form-control form-control-lg" />
+                                      <label class="form-label" for="typePassword"></label>
+                                    </div>
+                                    
+                                    <div class="form-outline form-white mb-4">
+                                      <h4>Confirm Password</h4> <input type="password2" id="typrpasswor2" class="form-control form-control-lg" />
+                                    <label class="form-label" for="typePassword"></label>
+                                  </div>
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckDefault"
+                                      />
+                                      <label class="form-check-label" for="flexCheckDefault">
+                                        Remember me
+                                      </label>
+                                    </div>
+                  
+                                    <div class="text-center py-5">
+                                      <button class="btn btn-light btn-lg btn-rounded px-5"  type="submit"><h3>Sign up</button>
+                                    </div>
+                                  </div>
+                  
+                                     <div class="text-center">
+                                    <a href="{% url 'login' %}" >i have already account</a>
+                                  </div>   {% endcomment %}
+                  
